@@ -1,0 +1,152 @@
+.modal {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(22, 39, 62, 0.7);
+
+    padding: 123px 61px 71px 139px;
+
+    &__close {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+
+        padding: 0;
+
+        width: 35px;
+        height: 35px;
+
+        border: none;
+        background: none;
+
+        &::after {
+            content: '';
+
+            display: block;
+
+            width: 47px;
+            height: 2px;
+
+            background-color: #000;
+
+            transform: translateY(-50%) rotate(45deg);
+
+            position: absolute;
+            left: -6px;
+            top: 50%;
+        }
+        &::before {
+            content: '';
+
+            display: block;
+
+            width: 47px;
+            height: 2px;
+
+            background-color: #000;
+
+            transform: translateY(-50%) rotate(-45deg);
+
+            position: absolute;
+            left: -6px;
+            top: 50%;
+        }
+    }
+
+    &__wrapper {
+        background-color: #fff;
+        opacity: 1;
+
+        border-radius: 40px;
+
+        position: relative;
+
+        padding-top: 45px;
+        padding-bottom: 36px;
+        padding-right: 42px;
+    }
+
+    &__subtitle {
+        font-size: 27px;
+        text-transform: uppercase;
+
+        margin-left: 213px;
+    }
+
+    &__title {
+        font-size: 95px;
+        text-transform: uppercase;
+        line-height: 67px;
+
+        margin-top: 26px;
+        margin-left: 208px;
+    }
+
+    &__content {
+        margin-left: 213px;
+        margin-top: 48px;
+    }
+
+    &__item {
+        &:not(:nth-child(1)) {
+            margin-top: 22px;
+        }
+    }
+
+    &__counter {
+        font-size: 25px;
+        font-weight: bold;
+        color: #8cc9e8;
+    }
+
+    &__text {
+        margin-top: 18px;
+
+        font-size: 25px;
+    }
+
+    &__navigation {
+        height: 15px;
+        width: 90px;
+
+        margin-top: 55px;
+        margin-left: 213px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &_arrow {
+            padding: 0;
+
+            border: none;
+            background: none;
+        }
+
+        &_dots {
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        &_dot {
+            width: 11px;
+            height: 11px;
+
+            border: 3px solid black;
+            border-radius: 100%;
+
+            &:not(:nth-child(1)) {
+                margin-left: 9px;
+            }
+
+            &-active {
+                background-color: #fc6da9;
+
+                border: none;
+            }
+        }
+    }
+}

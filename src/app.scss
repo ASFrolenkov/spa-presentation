@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('./fonts/DINPro/DINPro.eot');
+    src: url('./fonts/DINPro/DINPro.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/DINPro/DINPro.woff2') format('woff2'),
+        url('./fonts/DINPro/DINPro.woff') format('woff'),
+        url('./fonts/DINPro/DINPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/GilroyLight/Gilroy-Light.eot');
+    src: url('./fonts/GilroyLight/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GilroyLight/Gilroy-Light.woff2') format('woff2'),
+        url('./fonts/GilroyLight/Gilroy-Light.woff') format('woff'),
+        url('./fonts/GilroyLight/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('./fonts/GilroyExtraBold/Gilroy-ExtraBold.eot');
+    src: url('./fonts/GilroyExtraBold/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GilroyExtraBold/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('./fonts/GilroyExtraBold/Gilroy-ExtraBold.woff') format('woff'),
+        url('./fonts/GilroyExtraBold/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.dinpro {
+    font-family: 'DIN Pro';
+}
+
+.gilroy {
+    font-family: 'Gilroy';
+}
+
+.gilroyBold {
+    font-family: 'Gilroy Bold';
+}
+
+* {
+    box-sizing: border-box;
+    --btn-color: #ff6a9f;
+}
+
+.container {
+    height: 100vh;
+
+    position: relative;
+}
+
+.bottom_logo {
+    position: absolute;
+    bottom: 13px;
+    z-index: 10;
+
+    margin-left: 84px;
+}

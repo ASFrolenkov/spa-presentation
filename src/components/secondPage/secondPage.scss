@@ -1,0 +1,84 @@
+.second {
+    background: url('./img/secondBg.jpg') center center/cover no-repeat;
+
+    position: relative;
+
+    padding: 136px 131px 83px 67px;
+    
+    &__title {
+        font-size: 28px;
+        text-transform: uppercase;
+        letter-spacing: 1.65px;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    &__wrapper {
+        margin-top: 46px;
+
+        display: flex;
+
+        height: 445px;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    &__range {
+        width: 20px;
+
+        margin: 0;
+        margin-right: 5px;
+
+        transform: rotate(180deg);
+
+        -webkit-appearance: slider-vertical;
+    }
+
+    &__block {
+        margin-left: 26px;
+        padding: 32px 51px 10px 31px;
+
+        position: relative;
+
+        background-color: #fff;
+
+        border-radius: 40px;
+
+        overflow: hidden;
+
+        &::after {
+            content: '';
+
+            display: block;
+
+            position: absolute;
+
+            bottom: 0;
+
+            width: 100%;
+            height: 10px;
+
+            background-color: #fff;
+
+            box-shadow: 1px 0px 15px 10px white;
+        }
+    }
+
+    &__text {
+        font-size: 23px;
+
+        line-height: 1.33;
+
+        letter-spacing: 0.44px;
+
+        position: relative;
+
+        bottom: 0%;
+
+        &>span {
+            font-weight: bold;
+        }
+    }
+}

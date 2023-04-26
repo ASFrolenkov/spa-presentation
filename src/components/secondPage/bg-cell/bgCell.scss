@@ -1,0 +1,57 @@
+.bg-cell {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    &__pink {
+        position: absolute;
+
+        &:nth-child(1) {
+            margin-top: 260px;
+
+            right: -110px;
+
+            transform: scale(1.8) rotate(25deg);
+        }
+
+        &:nth-child(2) {
+            margin-top: 175px;
+
+            right: -170px;
+
+            transform: scale(1.1) rotate(25deg);
+            opacity: 0.8;
+        }
+
+        &:nth-child(3) {
+            margin-top: 95px;
+
+            right: -225px;
+
+            transform: scale(0.7) rotate(25deg);
+            opacity: 0.6;
+        }
+
+        &:nth-child(4) {
+            bottom: 115px;
+
+            right: -295px;
+
+            transform: scale(0.5) rotate(25deg);
+            opacity: 0.6;
+            filter: blur(2px);
+        }
+
+        &:nth-child(5) {
+            bottom: 200px;
+
+            right: -440px;
+
+            transform: scale(1) rotate(25deg);
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.pinkButton {
+    padding: 0;
+    padding-right: 34px;
+
+    width: 288px;
+    height: 80px;
+
+    border-radius: 80px;
+    border: none;
+
+    background-color: var(--btn-color);
+
+    font-size: 30px;
+    text-align: right;
+
+    position: relative;
+    &::after {
+        content: '';
+
+        display: block;
+
+        position: absolute;
+        top: 13px;
+        left: 17px;
+        z-index: 0;
+
+        background: linear-gradient(135deg, rgba(0,0,0, 0.45) 0%, rgba(255,255,255, 0.75) 100%);
+
+        width: 56px;
+        height: 56px;
+
+        border-radius: 100%;
+    }
+}
+
+.mainPageBtn {
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+
+    margin-right: 115px;
+
+    &::before {
+        content: url('../../icons/arrow-icon.svg');
+
+        display: block;
+
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        z-index: 1;
+
+        width: 50px;
+        height: 50px;
+
+        text-align: center;
+
+        background-color: #000;
+        
+        border-radius: 100%;
+        border: 3px solid ;
+
+        padding-top: 3px;
+
+        box-sizing: border-box;
+    }
+}
+
+.finalPageBtn {
+    width: 263px;
+    height: 80px;
+
+    padding-right: 30px;
+
+    &::before {
+        content: '+';
+
+        color: #fff;
+
+        display: block;
+
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        z-index: 1;
+
+        width: 50px;
+        height: 50px;
+
+        text-align: center;
+
+        background-color: #000;
+        
+        border-radius: 100%;
+        border: 3px solid black;
+
+        box-sizing: border-box;
+    }
+}
